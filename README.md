@@ -1,6 +1,6 @@
 # Zamok
-FUD Linux Ransomware
-![img]("https://github.com/nemzyxt/zamok/blob/main/scrshot/fud.png?raw=true")
+FUD Linux Ransomware \
+![img](https://github.com/nemzyxt/zamok/blob/main/scrshot/fud.png?raw=true)
 
 ### Usage :
 - Clone this repository
