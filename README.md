@@ -19,7 +19,7 @@ FUD Linux Ransomware \
     - Music
     - Videos
     - Pictures
-5. Drop a RANSOM note on the desktop with instructions
+5. Drop a RANSOM note on the desktop with instructions (README.txt)
 
 ### Warning 
 This project is for educational purposes only !
