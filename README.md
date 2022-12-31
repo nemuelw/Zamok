@@ -9,8 +9,8 @@ FUD Linux Ransomware \
     ``` go build -ldflags="-s -w" zamok.go ```
 
 ### How it works :
-1. Change directory to the home directory of the current user
-2. Generate an encryption key
+1. Change into the current user's home directory
+2. Generate the encryption key
 3. Send a copy of the key as well as a unique identifier for the machine to the C2 Server
 4. Loop through the target directories encrypting every file in them .
     - Desktop
@@ -19,7 +19,8 @@ FUD Linux Ransomware \
     - Music
     - Videos
     - Pictures
-5. Drop a RANSOM note on the desktop with instructions (README.txt)
+5. Drop a RANSOM note on the Desktop with instructions (README.txt)
 
-### Warning 
-This project is for educational purposes only !
+### DISCLAIMER 
+This project is for educational purposes only, and I will not be \
+responsible for anything malicious that you do with it !
