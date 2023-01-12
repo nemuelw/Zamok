@@ -23,4 +23,4 @@ FUD Linux Ransomware \
 
 ### DISCLAIMER 
 This project is for educational purposes only, and I will not be \
-responsible for anything malicious that you do with it !
+responsible for anything malicious that you do with it, so act responsibly !
